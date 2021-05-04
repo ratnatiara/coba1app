@@ -32,8 +32,8 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/produk/(:alpha)', 'Produk::detail_merek/$1', ['as' => 'detailproduk']);
-$routes->get('/produk/(:alpha)/(:alpha)', 'Produk::detail_model/$1/$2');
+$routes->get('/mobil/(:alpha)', 'Mobil::detail_merek/$1', ['as' => 'detailmobil']);
+$routes->get('/mobil/(:alpha)/(:alpha)', 'Mobil::detail_model/$1/$2');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

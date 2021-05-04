@@ -2,12 +2,16 @@
 
 namespace App\Controllers;
 
-class Produk extends BaseController
+class Motor extends BaseController
 {
     public function index()
     {
-        echo "ini adalah method index pada controller produk";
-        // echo "<br><a href=' " . route_to('detailproduk') . " '>Link ke detail produk</a>";
+        $data = [
+            'title' => 'Motor | Catalog Mobil Motor'
+        ];
+        echo view('layout/header', $data);
+        echo view('motor');
+        echo view('layout/footer');
     }
     public function detail_merek($param1 = '')
     {

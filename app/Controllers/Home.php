@@ -6,6 +6,14 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		return view('welcome_message');
+		// return view('welcome_message');
+		// return view('home');
+		$data = [
+			'title' => 'Home | Catalog Mobil Motor',
+			'status' => 'active'
+		];
+		echo view('layout/header', $data);
+		echo view('home');
+		echo view('layout/footer');
 	}
 }
