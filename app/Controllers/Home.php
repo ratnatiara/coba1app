@@ -10,7 +10,7 @@ class Home extends BaseController
 		// return view('home');
 		$data = [
 			'title' => 'Home | Catalog Mobil Motor',
-			'status' => 'active'
+			'jenis' => 'home'
 		];
 		echo view('layout/header', $data);
 		echo view('home');

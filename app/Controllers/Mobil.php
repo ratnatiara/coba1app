@@ -10,7 +10,8 @@ class Mobil extends BaseController
         // echo "<br><a href=' " . route_to('detailproduk') . " '>Link ke detail produk</a>";
         // return view('produk');
         $data = [
-            'title' => 'Mobil | Catalog Mobil Motor'
+            'title' => 'Mobil | Catalog Mobil Motor',
+            'jenis' => 'mobil'
         ];
         echo view('layout/header', $data);
         echo view('mobil');

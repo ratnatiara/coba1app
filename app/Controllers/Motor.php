@@ -7,7 +7,8 @@ class Motor extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Motor | Catalog Mobil Motor'
+            'title' => 'Motor | Catalog Mobil Motor',
+            'jenis' => 'motor'
         ];
         echo view('layout/header', $data);
         echo view('motor');
