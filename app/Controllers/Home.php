@@ -12,8 +12,9 @@ class Home extends BaseController
 			'title' => 'Home | Catalog Mobil Motor',
 			'jenis' => 'home'
 		];
-		echo view('layout/header', $data);
-		echo view('home');
-		echo view('layout/footer');
+		// echo view('layout/header', $data);
+		// echo view('home');
+		// echo view('layout/footer');
+		return view('home', $data);
 	}
 }

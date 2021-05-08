@@ -10,9 +10,10 @@ class Motor extends BaseController
             'title' => 'Motor | Catalog Mobil Motor',
             'jenis' => 'motor'
         ];
-        echo view('layout/header', $data);
-        echo view('motor');
-        echo view('layout/footer');
+        // echo view('layout/header', $data);
+        // echo view('motor');
+        // echo view('layout/footer');
+        return view('motor', $data);
     }
     public function detail_merek($param1 = '')
     {

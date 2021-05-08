@@ -13,9 +13,10 @@ class Mobil extends BaseController
             'title' => 'Mobil | Catalog Mobil Motor',
             'jenis' => 'mobil'
         ];
-        echo view('layout/header', $data);
-        echo view('mobil');
-        echo view('layout/footer');
+        // echo view('layout/header', $data);
+        // echo view('mobil');
+        // echo view('layout/footer');
+        return view('mobil', $data);
     }
     public function detail_merek($param1 = '')
     {
